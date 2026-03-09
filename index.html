@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>REVOLT CLAN</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron', sans-serif;
+cursor:url("logo.png"), auto;
+}
+
+body{
+background: radial-gradient(circle at top,#1a0000,#000000);
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+border-bottom:1px solid red;
+}
+
+nav img{
+height:60px;
+filter:drop-shadow(0 0 10px red);
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:red;
+text-shadow:0 0 10px red;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+.hero img{
+width:260px;
+margin-bottom:20px;
+filter:
+drop-shadow(0 0 15px red)
+drop-shadow(0 0 30px red);
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{
+filter:drop-shadow(0 0 10px red);
+}
+to{
+filter:drop-shadow(0 0 40px red);
+}
+}
+
+.hero h1{
+font-size:70px;
+letter-spacing:6px;
+color:white;
+text-shadow:0 0 20px red;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#bbb;
+}
+
+/* BUTTONS */
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+padding:15px 40px;
+border:2px solid red;
+background:transparent;
+color:white;
+text-decoration:none;
+font-weight:600;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:red;
+box-shadow:0 0 20px red;
+transform:scale(1.05);
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+section h2{
+font-size:40px;
+margin-bottom:30px;
+text-shadow:0 0 10px red;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,0,0,0.05);
+border:1px solid rgba(255,0,0,0.3);
+padding:30px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px red;
+}
+
+footer{
+margin-top:60px;
+padding:20px;
+text-align:center;
+border-top:1px solid red;
+color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<img src="logo.png">
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#join">Join</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<img src="logo.png">
+
+<h1>REVOLT</h1>
+
+<p>In the chaos of battle, legends are born.</p>
+
+<div class="buttons">
+
+<a href="https://discord.gg/gkxzUaQG6P" class="btn">DISCORD</a>
+
+<a href="https://youtube.com/@revolt-clan" class="btn">YOUTUBE</a>
+
+<a href="https://www.instagram.com/revoltclanofficial?igsh=ZG1pNTJ5ZXM5ZXVh" class="btn">INSTAGRAM</a>
+
+</div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>ABOUT US</h2>
+
+<p>
+REVOLT CLAN is a competitive gaming guild built for domination.
+We rise, we fight, and we revolt against every opponent who stands in our way.
+Skill, strategy, and loyalty define us.
+Only the strongest survive in the revolt.
+</p>
+
+</section>
+
+<!-- TEAM -->
+
+<section id="team">
+
+<h2>OUR E-SPORT TEAMS</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>HUNTERS</h3>
+<p>RC !CON!C</p>
+</div>
+
+<div class="card">
+<h3>REBELS</h3>
+<p>RC RAZE</p>
+</div>
+
+<div class="card">
+<h3>WARRIORS</h3>
+<p>RC SAKURA</p>
+</div>
+
+<div class="card">
+<h3>DOMINATORS</h3>
+<p>RC ARJUN</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- JOIN -->
+
+<section id="join">
+
+<h2>JOIN THE CLAN</h2>
+
+<p>Think, you have what it takes? Apply now.</p>
+
+<br>
+
+<a href="https://forms.gle/MpLXTZzbfhGoFv3aA" class="btn">APPLY NOW</a>
+
+</section>
+
+<footer>
+
+REVOLT CLAN © 2026
+
+</footer>
+
+</body>
+</html>
