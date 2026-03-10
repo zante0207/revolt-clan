@@ -1,11 +1,27 @@
-const bg = document.querySelector(".bg")
+particlesJS("particles-js", {
 
-document.addEventListener("mousemove", e => {
+particles:{
 
-let x = e.clientX / window.innerWidth * 255
-let y = e.clientY / window.innerHeight * 255
+number:{value:120},
 
-bg.style.background =
-`radial-gradient(circle at ${x}px ${y}px, #3b0000, #000000)`
+size:{value:3},
 
-})
+move:{speed:2},
+
+line_linked:{
+enable:true,
+color:"#ff1a1a"
+}
+
+},
+
+interactivity:{
+
+events:{
+onhover:{enable:true,mode:"repulse"},
+onclick:{enable:true,mode:"push"}
+}
+
+}
+
+});
