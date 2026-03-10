@@ -1,140 +1,283 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>REVOLT CLAN</title>
 
-<link rel="stylesheet" href="style.css">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron', sans-serif;
+cursor:url("logo.png"), auto;
+}
 
+body{
+background: radial-gradient(circle at top,#1a0000,#000000);
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+border-bottom:1px solid red;
+}
+
+nav img{
+height:60px;
+filter:drop-shadow(0 0 10px red);
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:red;
+text-shadow:0 0 10px red;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+.hero img{
+width:260px;
+margin-bottom:20px;
+filter:
+drop-shadow(0 0 15px red)
+drop-shadow(0 0 30px red);
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{
+filter:drop-shadow(0 0 10px red);
+}
+to{
+filter:drop-shadow(0 0 40px red);
+}
+}
+
+.hero h1{
+font-size:70px;
+letter-spacing:6px;
+color:white;
+text-shadow:0 0 20px red;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#bbb;
+}
+
+/* BUTTONS */
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+padding:15px 40px;
+border:2px solid red;
+background:transparent;
+color:white;
+text-decoration:none;
+font-weight:600;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:red;
+box-shadow:0 0 20px red;
+transform:scale(1.05);
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+section h2{
+font-size:40px;
+margin-bottom:30px;
+text-shadow:0 0 10px red;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,0,0,0.05);
+border:1px solid rgba(255,0,0,0.3);
+padding:30px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px red;
+}
+
+footer{
+margin-top:60px;
+padding:20px;
+text-align:center;
+border-top:1px solid red;
+color:#777;
+}
+
+</style>
 </head>
 
 <body>
-
-<!-- LOADING SCREEN -->
-
-<div id="loader">
-
-<h1>REVOLT</h1>
-<p>LOADING SYSTEM...</p>
-
-</div>
-
-<!-- BACKGROUND -->
-
-<div class="background"></div>
-
-<!-- PARTICLES -->
-
-<div id="particles-js"></div>
-
-<!-- CURSOR -->
-
-<div class="cursor"></div>
-<div class="cursor-ring"></div>
 
 <!-- NAVBAR -->
 
 <nav>
 
-<div class="logo">REVOLT</div>
+<img src="logo.png">
 
 <ul>
-
 <li><a href="#">Home</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="#social">Social</a></li>
-
+<li><a href="#team">Team</a></li>
+<li><a href="#join">Join</a></li>
 </ul>
 
 </nav>
 
 <!-- HERO -->
 
-<section class="hero">
+<div class="hero">
 
-<h1 class="title">REVOLT CLAN</h1>
+<img src="logo.png">
 
-<p>Elite Free Fire Esports Guild</p>
+<h1>REVOLT</h1>
+
+<p>Fearless Gaming Clan | Dominate Every Match</p>
 
 <div class="buttons">
 
-<a class="btn primary" href="https://discord.com">
-Join Clan
-</a>
+<a href="https://discord.gg/" class="btn">JOIN DISCORD</a>
 
-<a class="btn secondary" href="#about">
-Learn More
-</a>
+<a href="https://youtube.com/" class="btn">WATCH VIDEOS</a>
+
+<a href="#join" class="btn">JOIN CLAN</a>
 
 </div>
 
-</section>
+</div>
 
 <!-- ABOUT -->
 
-<section id="about" class="about reveal">
+<section id="about">
 
 <h2>ABOUT REVOLT</h2>
 
 <p>
-REVOLT CLAN is a competitive Free Fire guild built for domination.
-We focus on strategy, teamwork and elite gameplay.
+REVOLT is an elite gaming clan built for competitive domination.
+We focus on teamwork, skill, and strategy. Whether it's tournaments,
+ranked matches, or content creation — we push to the top.
 </p>
 
 </section>
 
-<!-- SOCIAL -->
+<!-- TEAM -->
 
-<section id="social" class="social reveal">
+<section id="team">
 
-<h2>FOLLOW US</h2>
+<h2>OUR TEAM</h2>
 
-<div class="social-buttons">
+<div class="cards">
 
-<a class="social-btn discord"
-href="https://discord.com">
+<div class="card">
+<h3>Leader</h3>
+<p>Clan Founder</p>
+</div>
 
-<i class="fab fa-discord"></i>
-Discord
+<div class="card">
+<h3>Pro Player</h3>
+<p>Top Fragger</p>
+</div>
 
-</a>
+<div class="card">
+<h3>Strategist</h3>
+<p>Tactics Expert</p>
+</div>
 
-<a class="social-btn youtube"
-href="https://youtube.com">
-
-<i class="fab fa-youtube"></i>
-YouTube
-
-</a>
-
-<a class="social-btn instagram"
-href="https://instagram.com">
-
-<i class="fab fa-instagram"></i>
-Instagram
-
-</a>
+<div class="card">
+<h3>Content Creator</h3>
+<p>YouTube / Streaming</p>
+</div>
 
 </div>
+
+</section>
+
+<!-- JOIN -->
+
+<section id="join">
+
+<h2>JOIN THE CLAN</h2>
+
+<p>Think you have what it takes? Apply now.</p>
+
+<br>
+
+<a href="https://discord.gg/" class="btn">APPLY NOW</a>
 
 </section>
 
 <footer>
 
-<p>© 2026 REVOLT CLAN</p>
+REVOLT CLAN © 2026
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
-<script src="script.js"></script>
-
 </body>
-
 </html>
