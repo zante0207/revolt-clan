@@ -7,68 +7,120 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
+<!-- LOADING SCREEN -->
+
+<div id="loader">
+
+<h1>REVOLT</h1>
+<p>LOADING SYSTEM...</p>
+
+</div>
+
+<!-- BACKGROUND -->
+
+<div class="background"></div>
+
+<!-- PARTICLES -->
+
 <div id="particles-js"></div>
+
+<!-- CURSOR -->
+
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<!-- NAVBAR -->
 
 <nav>
 
 <div class="logo">REVOLT</div>
 
 <ul>
+
 <li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Join</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#social">Social</a></li>
+
 </ul>
 
 </nav>
 
+<!-- HERO -->
+
 <section class="hero">
 
-<h1>REVOLT CLAN</h1>
+<h1 class="title">REVOLT CLAN</h1>
 
 <p>Elite Free Fire Esports Guild</p>
 
-<div class="hero-buttons">
+<div class="buttons">
 
-<a class="btn primary">JOIN THE CLAN</a>
-<a class="btn secondary">ABOUT US</a>
+<a class="btn primary" href="https://discord.com">
+Join Clan
+</a>
+
+<a class="btn secondary" href="#about">
+Learn More
+</a>
 
 </div>
 
 </section>
 
-<section class="about">
+<!-- ABOUT -->
 
-<h2>WHO WE ARE</h2>
+<section id="about" class="about reveal">
+
+<h2>ABOUT REVOLT</h2>
 
 <p>
 REVOLT CLAN is a competitive Free Fire guild built for domination.
-We combine strategy, mechanical skill, and teamwork to conquer
-every battlefield.
+We focus on strategy, teamwork and elite gameplay.
 </p>
 
 </section>
 
-<section class="features">
+<!-- SOCIAL -->
 
-<div class="feature-card">
-<h3>ELITE PLAYERS</h3>
-<p>Top tier Free Fire talent.</p>
-</div>
+<section id="social" class="social reveal">
 
-<div class="feature-card">
-<h3>STRATEGY</h3>
-<p>Coordinated gameplay and tactics.</p>
-</div>
+<h2>FOLLOW US</h2>
 
-<div class="feature-card">
-<h3>DOMINATION</h3>
-<p>Winning tournaments and matches.</p>
+<div class="social-buttons">
+
+<a class="social-btn discord"
+href="https://discord.com">
+
+<i class="fab fa-discord"></i>
+Discord
+
+</a>
+
+<a class="social-btn youtube"
+href="https://youtube.com">
+
+<i class="fab fa-youtube"></i>
+YouTube
+
+</a>
+
+<a class="social-btn instagram"
+href="https://instagram.com">
+
+<i class="fab fa-instagram"></i>
+Instagram
+
+</a>
+
 </div>
 
 </section>
@@ -80,6 +132,7 @@ every battlefield.
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
 <script src="script.js"></script>
 
 </body>
