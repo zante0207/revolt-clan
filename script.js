@@ -1,1 +1,0 @@
-console.log("REVOLT CLAN WEBSITE LOADED")
