@@ -1,177 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>REVOLT</title>
+<title>REVOLT CLAN</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Orbitron', sans-serif;
-cursor:url("logo.png"), auto;
-}
-
-body{
-background: radial-gradient(circle at top,#1a0000,#000000);
-color:white;
-overflow-x:hidden;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-border-bottom:1px solid red;
-}
-
-nav img{
-height:60px;
-filter:drop-shadow(0 0 10px red);
-}
-
-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
-
-nav ul li a{
-text-decoration:none;
-color:white;
-font-weight:600;
-transition:0.3s;
-}
-
-nav ul li a:hover{
-color:red;
-text-shadow:0 0 10px red;
-}
-
-/* HERO */
-
-.hero{
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-text-align:center;
-padding:20px;
-}
-
-.hero img{
-width:260px;
-margin-bottom:20px;
-filter:
-drop-shadow(0 0 15px red)
-drop-shadow(0 0 30px red);
-animation:glow 2s infinite alternate;
-}
-
-@keyframes glow{
-from{
-filter:drop-shadow(0 0 10px red);
-}
-to{
-filter:drop-shadow(0 0 40px red);
-}
-}
-
-.hero h1{
-font-size:70px;
-letter-spacing:6px;
-color:white;
-text-shadow:0 0 20px red;
-}
-
-.hero p{
-margin-top:15px;
-font-size:18px;
-color:#bbb;
-}
-
-/* BUTTONS */
-
-.buttons{
-margin-top:40px;
-display:flex;
-gap:25px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.btn{
-padding:15px 40px;
-border:2px solid red;
-background:transparent;
-color:white;
-text-decoration:none;
-font-weight:600;
-letter-spacing:2px;
-transition:0.3s;
-}
-
-.btn:hover{
-background:red;
-box-shadow:0 0 20px red;
-transform:scale(1.05);
-}
-
-/* SECTION */
-
-section{
-padding:80px 10%;
-text-align:center;
-}
-
-section h2{
-font-size:40px;
-margin-bottom:30px;
-text-shadow:0 0 10px red;
-}
-
-/* CARDS */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-}
-
-.card{
-background:rgba(255,0,0,0.05);
-border:1px solid rgba(255,0,0,0.3);
-padding:30px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 25px red;
-}
-
-footer{
-margin-top:60px;
-padding:20px;
-text-align:center;
-border-top:1px solid red;
-color:#777;
-}
-
-</style>
 </head>
 
 <body>
@@ -180,7 +19,7 @@ color:#777;
 
 <nav>
 
-<img src="logo.png">
+<img src="logo.png" class="logo">
 
 <ul>
 <li><a href="#">Home</a></li>
@@ -191,9 +30,10 @@ color:#777;
 
 </nav>
 
+
 <!-- HERO -->
 
-<div class="hero">
+<section class="hero">
 
 <img src="logo.png">
 
@@ -201,60 +41,60 @@ color:#777;
 
 <p>LOYALTY IS OUR PRIORITY !!</p>
 
+<div class="buttons">
 
+<a href="https://discord.gg/" class="btn">JOIN DISCORD</a>
+
+<a href="https://youtube.com/" class="btn">YOUTUBE</a>
+
+<a href="#join" class="btn">JOIN CLAN</a>
 
 </div>
 
+</section>
+
+
 <!-- ABOUT -->
-<section class="about-section">
 
-<h2 class="section-title">ABOUT REVOLT CLAN</h2>
+<section id="about" class="about">
 
-<div class="about-cards">
+<h2>ABOUT REVOLT CLAN</h2>
+
+<div class="about-container">
 
 <div class="about-card">
 <h3>Our Origin</h3>
 <p>
-REVOLT CLAN was created by passionate competitive players who wanted more than
-just casual matches. The goal was simple — build a squad that dominates the
-battlefield with skill, discipline, and teamwork. What started as a small group
-of dedicated gamers quickly grew into a powerful community of warriors ready to
-face any challenge.
+REVOLT CLAN was created by passionate competitive players who wanted more than just casual matches. The goal was simple — build a squad that dominates the battlefield with skill, discipline, and teamwork.
 </p>
 </div>
 
 <div class="about-card">
 <h3>Our Mission</h3>
 <p>
-Our mission is to create one of the strongest competitive gaming communities.
-REVOLT focuses on skill improvement, tactical gameplay, and strong teamwork.
-Every member pushes themselves to become better every day while supporting
-their teammates to achieve victory together.
+Our mission is to build one of the strongest gaming communities where players improve their skills, work together, and dominate every match.
 </p>
 </div>
 
 <div class="about-card">
 <h3>Our Community</h3>
 <p>
-REVOLT CLAN is more than just a team — it is a brotherhood of gamers. Members
-train together, share strategies, and support each other both inside and
-outside the game. Respect and loyalty are the foundations of our community.
+REVOLT is not just a clan — it is a brotherhood of gamers who support each other, train together, and grow stronger as a team.
 </p>
 </div>
 
 <div class="about-card">
 <h3>Our Future</h3>
 <p>
-REVOLT aims to expand into larger tournaments, content creation, and a global
-gaming community. The vision is to build a powerful esports brand recognized
-for skill, discipline, and unstoppable ambition.
+REVOLT aims to grow into a powerful esports community through tournaments, streaming, and competitive gameplay.
 </p>
 </div>
 
 </div>
 
 </section>
-  
+
+
 <!-- TEAM -->
 
 <section id="team">
@@ -287,6 +127,7 @@ for skill, discipline, and unstoppable ambition.
 
 </section>
 
+
 <!-- JOIN -->
 
 <section id="join">
@@ -301,15 +142,6 @@ for skill, discipline, and unstoppable ambition.
 
 </section>
 
-<div class="buttons">
-
-<a href="https://discord.gg/" class="btn">JOIN DISCORD</a>
-
-<a href="https://youtube.com/" class="btn">YOUTUBE</a>
-
-<a href="#join" class="btn">JOIN CLAN</a>
-
-</div>
 
 <footer>
 
@@ -319,6 +151,3 @@ REVOLT CLAN © 2026
 
 </body>
 </html>
-
-
-
