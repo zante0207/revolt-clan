@@ -1,93 +1,62 @@
-/* LOADER */
+// LOADER
 
-window.addEventListener("load",()=>{
-
+window.onload = function(){
 setTimeout(()=>{
+document.getElementById("loader").style.display="none";
+},1500);
+};
 
-document.getElementById("loader").style.display="none"
 
-},1500)
+// PARTICLES
 
-})
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
 
-/* PARTICLES */
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-particlesJS("particles-js",{
+let particles = [];
 
-particles:{
+for(let i=0;i<100;i++){
 
-number:{value:100},
-
-size:{value:3},
-
-move:{speed:2},
-
-line_linked:{
-enable:true,
-color:"#ff0000"
-}
-
-},
-
-interactivity:{
-
-events:{
-onhover:{enable:true,mode:"repulse"},
-onclick:{enable:true,mode:"push"}
-}
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+size:Math.random()*2,
+speedX:(Math.random()-0.5)*0.5,
+speedY:(Math.random()-0.5)*0.5
+});
 
 }
 
-})
+function animate(){
 
-/* SCROLL REVEAL */
+ctx.clearRect(0,0,canvas.width,canvas.height);
 
-function reveal(){
+particles.forEach(p=>{
 
-let reveals=document.querySelectorAll(".reveal")
+p.x += p.speedX;
+p.y += p.speedY;
 
-for(let i=0;i<reveals.length;i++){
+ctx.fillStyle="white";
+ctx.fillRect(p.x,p.y,p.size,p.size);
 
-let windowHeight=window.innerHeight
-let elementTop=reveals[i].getBoundingClientRect().top
+});
 
-if(elementTop<windowHeight-100){
-
-reveals[i].classList.add("active")
-
-}
+requestAnimationFrame(animate);
 
 }
 
-}
+animate();
 
-window.addEventListener("scroll",reveal)
 
-/* CURSOR */
+// MOUSE TRAIL
 
-const cursor=document.querySelector(".cursor")
-const ring=document.querySelector(".cursor-ring")
+const trail = document.getElementById("trail");
 
 document.addEventListener("mousemove",(e)=>{
 
-cursor.style.left=e.clientX+"px"
-cursor.style.top=e.clientY+"px"
+trail.style.left = e.pageX + "px";
+trail.style.top = e.pageY + "px";
 
-ring.style.left=e.clientX-16+"px"
-ring.style.top=e.clientY-16+"px"
-
-})
-
-/* CLICK EFFECT */
-
-document.addEventListener("click",()=>{
-
-ring.style.transform="scale(1.6)"
-
-setTimeout(()=>{
-
-ring.style.transform="scale(1)"
-
-},150)
-
-})
+});
