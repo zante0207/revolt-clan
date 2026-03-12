@@ -1,23 +1,52 @@
 body{
-font-family: Arial;
-background:#0f0f0f;
+margin:0;
+font-family:Arial, sans-serif;
+background:#0a0a0a;
 color:white;
-text-align:center;
+}
+
+header{
+background:black;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 nav a{
-margin:10px;
+margin-left:20px;
 color:white;
 text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:red;
 }
 
 .hero{
-margin-top:100px;
+text-align:center;
+padding:150px 20px;
+background:linear-gradient(black,#111);
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:20px;
 }
 
 .btn{
 background:red;
-padding:10px 20px;
+padding:12px 25px;
 color:white;
 text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+margin-top:50px;
 }
